@@ -2,25 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-export async function getData(){
-    const url = 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=100';
-  const options = {
-      method: 'GET',
-      headers: {
-          'X-RapidAPI-Key': '904eb19f61msh5f935a2fc165a03p1376fajsn18201a84ff5e',
-          'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com'
-      }
-  };
-  
-  try {
-      const response = await fetch(url, options);
-      const result = await response.json();
-    return result
-  } catch (error) {
-      console.error(error);
-  }
-  }
+import { getData } from "./Quotes";
 
 export default function Main() {
     const [quotes,setQuotes] =useState<any[]>([])
