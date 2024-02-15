@@ -3,7 +3,7 @@ import { useState } from "react"
 import supabase from "../config/supabaseClient"
 import { useRouter } from "next/navigation"
 
-export default function page() {
+export default function Create() {
   const [formError, setFormError] = useState('')
   const [quotes, setQuotes] = useState<any>('')
   const  router = useRouter()

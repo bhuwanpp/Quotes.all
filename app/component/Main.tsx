@@ -39,7 +39,7 @@ export default function Main() {
       <p className="p-4 text-orange-500  bg-sky-50
       rounded-md shadow-md">
         {quotes[0].text}
-        <p className="text-lime-700
+        <p  className="text-lime-700
         text-end pr-10"> - {quotes[0].author}</p>
           </p>
   }

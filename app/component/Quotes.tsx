@@ -33,8 +33,8 @@ export default function Quotes() {
     <h2 className="text-center text-3xl py-3 text-indigo-400 ">Random Quotes</h2>
 {quotes &&
   quotes.map((quote) =>
-  <h2 className="pb-3">
-    <p key={quote.id} className="bg-green-100 text-gray-800
+  <h2 key={quote.id}  className="pb-3">
+    <p  className="bg-green-100 text-gray-800
       px-5 sm:px-10 md:px-20 py-3  m-2 rounded-md">{quote.text} - {quote.author}</p>
   </h2>
 )}

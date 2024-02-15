@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import supabase from "../config/supabaseClient"
 import QuotesCard from "../component/YourQuote"
 
-export default function page() {
+export default function YourQuotes() {
  
     const [fetchError, setFetchError] = useState('')
     const [quotes, setQuotes] = useState<any[]>([])
