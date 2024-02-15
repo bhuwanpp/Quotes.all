@@ -1,5 +1,3 @@
-'use client'
-
 import { useEffect, useState } from "react"
 import supabase from "../config/supabaseClient"
 import QuotesCard from "../component/YourQuote"

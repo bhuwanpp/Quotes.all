@@ -1,7 +1,5 @@
 'use client'
-
 import { useEffect, useState } from "react";
-
 export async function getData(){
   const url = 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=100';
 const options = {
@@ -36,7 +34,7 @@ export default function Quotes() {
 {quotes &&
   quotes.map((quote) =>
   <h2 className="pb-3">
-    <p className="bg-green-100 text-gray-800
+    <p key={quote.id} className="bg-green-100 text-gray-800
       px-5 sm:px-10 md:px-20 py-3  m-2 rounded-md">{quote.text} - {quote.author}</p>
   </h2>
 )}
